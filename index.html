@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="de">
 <head>
 <meta charset="UTF-8">
@@ -21,135 +20,134 @@
   }
   .mono { font-family: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace; }
 
-/* Header */
-.header { margin-bottom: 24px; }
-.header-row { display: flex; justify-content: space-between; align-items: center; }
-.title { font-size: 20px; font-weight: 800; color: #F0F6FC; letter-spacing: -0.5px; }
-.streak { font-size: 12px; color: #F97316; font-weight: 700; }
-.subtitle { font-size: 11px; color: #484F58; margin-top: 2px; }
+  /* Header */
+  .header { margin-bottom: 24px; }
+  .header-row { display: flex; justify-content: space-between; align-items: center; }
+  .title { font-size: 20px; font-weight: 800; color: #F0F6FC; letter-spacing: -0.5px; }
+  .streak { font-size: 12px; color: #F97316; font-weight: 700; }
+  .subtitle { font-size: 11px; color: #484F58; margin-top: 2px; }
 
-/* Tabs */
-.tabs { display: flex; gap: 2px; margin-bottom: 18px; background: #161B22; border-radius: 8px; padding: 3px; }
-.tab {
-flex: 1; padding: 7px 0; background: transparent; color: #484F58;
-border: none; border-radius: 6px; font-size: 13px; font-weight: 600;
-cursor: pointer; transition: all 0.15s;
-}
-.tab.active { background: #21262D; color: #F0F6FC; }
+  /* Tabs */
+  .tabs { display: flex; gap: 2px; margin-bottom: 18px; background: #161B22; border-radius: 8px; padding: 3px; }
+  .tab {
+    flex: 1; padding: 7px 0; background: transparent; color: #484F58;
+    border: none; border-radius: 6px; font-size: 13px; font-weight: 600;
+    cursor: pointer; transition: all 0.15s;
+  }
+  .tab.active { background: #21262D; color: #F0F6FC; }
 
-/* Date header */
-.date-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
-.date-label { font-size: 13px; color: #8B949E; }
-.date-today { color: #58A6FF; }
-.day-total { font-size: 13px; font-weight: 700; }
+  /* Date header */
+  .date-row { display: flex; justify-content: space-between; align-items: baseline; margin-bottom: 14px; }
+  .date-label { font-size: 13px; color: #8B949E; }
+  .date-today { color: #58A6FF; }
+  .day-total { font-size: 13px; font-weight: 700; }
 
-/* Subject card */
-.card {
-background: #161B22; border: 1px solid #21262D;
-border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
-transition: border-color 0.2s;
-}
-.card.done { border-color: rgba(63, 185, 80, 0.25); }
-.card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
-.card-icon {
-width: 28px; height: 28px; border-radius: 7px; flex-shrink: 0;
-display: flex; align-items: center; justify-content: center;
-font-size: 12px; color: #484F58; background: #21262D;
-}
-.card-icon.done { color: #fff; font-size: 14px; }
-.card-name { font-size: 14px; font-weight: 700; color: #F0F6FC; }
-.card-name.done { color: #3FB950; }
-.card-target { font-size: 11px; color: #484F58; }
-.card-mins { margin-left: auto; font-size: 13px; font-weight: 700; }
+  /* Subject card */
+  .card {
+    background: #161B22; border: 1px solid #21262D;
+    border-radius: 10px; padding: 12px 14px; margin-bottom: 8px;
+    transition: border-color 0.2s;
+  }
+  .card.done { border-color: rgba(63, 185, 80, 0.25); }
+  .card-header { display: flex; align-items: center; gap: 8px; margin-bottom: 8px; }
+  .card-icon {
+    width: 28px; height: 28px; border-radius: 7px; flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px; color: #484F58; background: #21262D;
+  }
+  .card-icon.done { color: #fff; font-size: 14px; }
+  .card-name { font-size: 14px; font-weight: 700; color: #F0F6FC; }
+  .card-name.done { color: #3FB950; }
+  .card-target { font-size: 11px; color: #484F58; }
+  .card-mins { margin-left: auto; font-size: 13px; font-weight: 700; }
 
-/* Buttons */
-.btn-row { display: flex; gap: 5px; }
-.add-btn {
-flex: 1; padding: 8px 0; background: #21262D; border: 1px solid #30363D;
-border-radius: 6px; color: #8B949E; font-size: 12px; cursor: pointer;
-font-weight: 600; transition: all 0.1s; -webkit-user-select: none;
-}
-.add-btn:active { transform: scale(0.96); opacity: 0.8; }
-.edit-btn {
-width: 52px; padding: 6px 0; background: #0D111788; border: 1px solid #30363D;
-border-radius: 6px; color: #484F58; font-size: 11px; cursor: pointer;
-}
-.edit-input {
-width: 52px; background: #0D1117; border-radius: 6px;
-color: #F0F6FC; font-size: 13px; padding: 5px 4px;
-text-align: center; outline: none;
-}
+  /* Buttons */
+  .btn-row { display: flex; gap: 5px; }
+  .add-btn {
+    flex: 1; padding: 8px 0; background: #21262D; border: 1px solid #30363D;
+    border-radius: 6px; color: #8B949E; font-size: 12px; cursor: pointer;
+    font-weight: 600; transition: all 0.1s; -webkit-user-select: none;
+  }
+  .add-btn:active { transform: scale(0.96); opacity: 0.8; }
+  .edit-btn {
+    width: 52px; padding: 6px 0; background: #0D111788; border: 1px solid #30363D;
+    border-radius: 6px; color: #484F58; font-size: 11px; cursor: pointer;
+  }
+  .edit-input {
+    width: 52px; background: #0D1117; border-radius: 6px;
+    color: #F0F6FC; font-size: 13px; padding: 5px 4px;
+    text-align: center; outline: none;
+  }
 
-/* Progress */
-.progress { margin-top: 6px; height: 3px; background: #21262D; border-radius: 2px; overflow: hidden; }
-.progress-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
+  /* Progress */
+  .progress { margin-top: 6px; height: 3px; background: #21262D; border-radius: 2px; overflow: hidden; }
+  .progress-fill { height: 100%; border-radius: 2px; transition: width 0.3s; }
 
-/* Done banner */
-.done-banner {
-text-align: center; padding: 14px; background: rgba(63, 185, 80, 0.03);
-border: 1px solid rgba(63, 185, 80, 0.2); border-radius: 10px;
-margin-top: 10px; color: #3FB950; font-size: 13px; font-weight: 600;
-}
+  /* Done banner */
+  .done-banner {
+    text-align: center; padding: 14px; background: rgba(63, 185, 80, 0.03);
+    border: 1px solid rgba(63, 185, 80, 0.2); border-radius: 10px;
+    margin-top: 10px; color: #3FB950; font-size: 13px; font-weight: 600;
+  }
 
-/* Notes */
-.notes {
-width: 100%; min-height: 60px; margin-top: 14px; background: #161B22;
-border: 1px solid #21262D; border-radius: 8px; color: #8B949E;
-font-size: 12px; padding: 8px 10px; resize: vertical; outline: none;
-}
+  /* Notes */
+  .notes {
+    width: 100%; min-height: 60px; margin-top: 14px; background: #161B22;
+    border: 1px solid #21262D; border-radius: 8px; color: #8B949E;
+    font-size: 12px; padding: 8px 10px; resize: vertical; outline: none;
+  }
 
-/* Week nav */
-.week-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
-.nav-btn {
-background: #161B22; border: 1px solid #21262D; border-radius: 6px;
-color: #8B949E; font-size: 13px; padding: 5px 10px; cursor: pointer;
-}
-.week-label { font-size: 13px; color: #8B949E; font-weight: 600; }
+  /* Week nav */
+  .week-nav { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; }
+  .nav-btn {
+    background: #161B22; border: 1px solid #21262D; border-radius: 6px;
+    color: #8B949E; font-size: 13px; padding: 5px 10px; cursor: pointer;
+  }
+  .week-label { font-size: 13px; color: #8B949E; font-weight: 600; }
 
-/* Week grid */
-.week-grid { display: grid; grid-template-columns: auto repeat(4, 1fr); gap: 2px; font-size: 10px; }
-.cell {
-padding: 5px 3px; border-radius: 4px; text-align: center;
-display: flex; align-items: center; justify-content: center;
-}
-.cell-btn { border: none; cursor: pointer; }
+  /* Week grid */
+  .week-grid { display: grid; grid-template-columns: auto repeat(4, 1fr); gap: 2px; font-size: 10px; }
+  .cell {
+    padding: 5px 3px; border-radius: 4px; text-align: center;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .cell-btn { border: none; cursor: pointer; }
 
-/* Week summary */
-.week-summary {
-margin-top: 14px; padding: 10px 14px; background: #161B22;
-border-radius: 8px; border: 1px solid #21262D;
-display: flex; justify-content: space-between;
-}
+  /* Week summary */
+  .week-summary {
+    margin-top: 14px; padding: 10px 14px; background: #161B22;
+    border-radius: 8px; border: 1px solid #21262D;
+    display: flex; justify-content: space-between;
+  }
 
-/* Stats blocks */
-.stat-card {
-background: #161B22; border: 1px solid #21262D;
-border-radius: 8px; padding: 10px 14px; margin-bottom: 8px;
-}
-.stat-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
-.stat-name { font-size: 13px; font-weight: 700; }
-.stat-info { font-size: 11px; color: #8B949E; }
-.heat-row { display: flex; gap: 3px; }
-.heat-cell {
-flex: 1; height: 22px; border-radius: 4px;
-display: flex; align-items: center; justify-content: center; font-size: 8px;
-}
+  /* Stats blocks */
+  .stat-card {
+    background: #161B22; border: 1px solid #21262D;
+    border-radius: 8px; padding: 10px 14px; margin-bottom: 8px;
+  }
+  .stat-header { display: flex; justify-content: space-between; margin-bottom: 6px; }
+  .stat-name { font-size: 13px; font-weight: 700; }
+  .stat-info { font-size: 11px; color: #8B949E; }
+  .heat-row { display: flex; gap: 3px; }
+  .heat-cell {
+    flex: 1; height: 22px; border-radius: 4px;
+    display: flex; align-items: center; justify-content: center; font-size: 8px;
+  }
 
-/* Totals */
-.totals { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
-.total-num { font-size: 20px; font-weight: 800; }
-.total-label { font-size: 10px; color: #484F58; }
+  /* Totals */
+  .totals { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 10px; }
+  .total-num { font-size: 20px; font-weight: 800; }
+  .total-label { font-size: 10px; color: #484F58; }
 
-.reset-btn {
-margin-top: 14px; width: 100%; padding: 8px; background: transparent;
-border: 1px solid #30363D; border-radius: 8px; color: #484F58;
-font-size: 11px; cursor: pointer;
-}
+  .reset-btn {
+    margin-top: 14px; width: 100%; padding: 8px; background: transparent;
+    border: 1px solid #30363D; border-radius: 8px; color: #484F58;
+    font-size: 11px; cursor: pointer;
+  }
 
-.view { display: none; }
-.view.active { display: block; }
+  .view { display: none; }
+  .view.active { display: block; }
 </style>
-
 </head>
 <body>
 
@@ -328,120 +326,136 @@ function renderToday() {
 
   html += `<textarea class="notes mono" placeholder="Notizen..." oninput="setNote(this.value)">${state.notes[dk] || ''}</textarea>`;
 
-el.innerHTML = html;
+  el.innerHTML = html;
 }
 
 function promptMins(subId, current) {
-const val = prompt(“Minuten eingeben:”, current);
-if (val !== null) setMins(subId, parseInt(val) || 0);
+  const val = prompt("Minuten eingeben:", current);
+  if (val !== null) setMins(subId, parseInt(val) || 0);
 }
 
 function renderWeek() {
-const el = document.getElementById(“view-week”);
-const week = weekOf(selectedDate);
-const tk = todayStr();
+  const el = document.getElementById("view-week");
+  const week = weekOf(selectedDate);
+  const tk = todayStr();
 
-let tgt = 0, act = 0;
-week.forEach(d => {
-const k = ds(d);
-SUBJECTS.forEach(s => { tgt += s.target; act += state.sessions[k]?.[s.id]?.minutes || 0; });
-});
-const pct = tgt ? Math.round(act/tgt*100) : 0;
-const pctColor = pct >= 80 ? “#3FB950” : pct >= 50 ? “#F97316” : “#F85149”;
+  let tgt = 0, act = 0;
+  week.forEach(d => {
+    const k = ds(d);
+    SUBJECTS.forEach(s => { tgt += s.target; act += state.sessions[k]?.[s.id]?.minutes || 0; });
+  });
+  const pct = tgt ? Math.round(act/tgt*100) : 0;
+  const pctColor = pct >= 80 ? "#3FB950" : pct >= 50 ? "#F97316" : "#F85149";
 
-let html = `<div class="week-nav"> <button class="nav-btn mono" onclick="navWeek(-1)">◀</button> <span class="week-label mono">${fmtS(week[0])} – ${fmtS(week[6])}</span> <button class="nav-btn mono" onclick="navWeek(1)">▶</button> </div> <div class="week-grid mono"> <div class="cell" style="background:#0D1117;color:#484F58"></div>`;
+  let html = `
+    <div class="week-nav">
+      <button class="nav-btn mono" onclick="navWeek(-1)">◀</button>
+      <span class="week-label mono">${fmtS(week[0])} – ${fmtS(week[6])}</span>
+      <button class="nav-btn mono" onclick="navWeek(1)">▶</button>
+    </div>
+    <div class="week-grid mono">
+      <div class="cell" style="background:#0D1117;color:#484F58"></div>
+  `;
 
-SUBJECTS.forEach(s => {
-html += `<div class="cell" style="background:#0D1117;color:${s.color};font-weight:700">${s.icon}</div>`;
-});
+  SUBJECTS.forEach(s => {
+    html += `<div class="cell" style="background:#0D1117;color:${s.color};font-weight:700">${s.icon}</div>`;
+  });
 
-week.forEach((d, i) => {
-const k = ds(d);
-const isT = k === tk;
-html += `<button class="cell cell-btn mono" style="background:${isT?'#161B22':'#0D1117'};color:${isT?'#58A6FF':'#8B949E'};font-weight:${isT?700:400}" onclick="goToDay('${k}')">${WD[i]} ${fmtS(d)}</button>`;
+  week.forEach((d, i) => {
+    const k = ds(d);
+    const isT = k === tk;
+    html += `<button class="cell cell-btn mono" style="background:${isT?'#161B22':'#0D1117'};color:${isT?'#58A6FF':'#8B949E'};font-weight:${isT?700:400}" onclick="goToDay('${k}')">${WD[i]} ${fmtS(d)}</button>`;
 
-```
-SUBJECTS.forEach(s => {
-  const m = state.sessions[k]?.[s.id]?.minutes || 0;
-  const dn = state.sessions[k]?.[s.id]?.done;
-  const c = dn ? "#3FB950" : m > 0 ? s.color : "#30363D";
-  const bg = dn ? s.color + "18" : "#161B22";
-  html += `<div class="cell" style="background:${bg};color:${c}">${m > 0 ? m : '—'}</div>`;
-});
-```
+    SUBJECTS.forEach(s => {
+      const m = state.sessions[k]?.[s.id]?.minutes || 0;
+      const dn = state.sessions[k]?.[s.id]?.done;
+      const c = dn ? "#3FB950" : m > 0 ? s.color : "#30363D";
+      const bg = dn ? s.color + "18" : "#161B22";
+      html += `<div class="cell" style="background:${bg};color:${c}">${m > 0 ? m : '—'}</div>`;
+    });
+  });
 
-});
+  html += `</div>
+    <div class="week-summary mono">
+      <span style="font-size:12px;color:#8B949E">Woche</span>
+      <span style="font-size:13px;font-weight:700;color:${pctColor}">${pct}% · ${Math.round(act/60)}h/${Math.round(tgt/60)}h</span>
+    </div>
+  `;
 
-html += `</div> <div class="week-summary mono"> <span style="font-size:12px;color:#8B949E">Woche</span> <span style="font-size:13px;font-weight:700;color:${pctColor}">${pct}% · ${Math.round(act/60)}h/${Math.round(tgt/60)}h</span> </div> `;
-
-el.innerHTML = html;
+  el.innerHTML = html;
 }
 
 function goToDay(dateStr) {
-selectedDate = new Date(dateStr + “T12:00:00”);
-currentView = “today”;
-render();
+  selectedDate = new Date(dateStr + "T12:00:00");
+  currentView = "today";
+  render();
 }
 
 function navWeek(dir) {
-selectedDate.setDate(selectedDate.getDate() + dir * 7);
-render();
+  selectedDate.setDate(selectedDate.getDate() + dir * 7);
+  render();
 }
 
 function renderStats() {
-const el = document.getElementById(“view-stats”);
-const l7 = Array.from({length:7}, (_,i) => { const d = new Date(); d.setDate(d.getDate()-(6-i)); return ds(d); });
+  const el = document.getElementById("view-stats");
+  const l7 = Array.from({length:7}, (_,i) => { const d = new Date(); d.setDate(d.getDate()-(6-i)); return ds(d); });
 
-let html = `<div style="font-size:11px;color:#484F58;margin-bottom:6px" class="mono">Letzte 7 Tage</div>`;
+  let html = `<div style="font-size:11px;color:#484F58;margin-bottom:6px" class="mono">Letzte 7 Tage</div>`;
 
-SUBJECTS.forEach(sub => {
-const tot = l7.reduce((a,k) => a + (state.sessions[k]?.[sub.id]?.minutes || 0), 0);
-const active = l7.filter(k => (state.sessions[k]?.[sub.id]?.minutes || 0) > 0).length;
+  SUBJECTS.forEach(sub => {
+    const tot = l7.reduce((a,k) => a + (state.sessions[k]?.[sub.id]?.minutes || 0), 0);
+    const active = l7.filter(k => (state.sessions[k]?.[sub.id]?.minutes || 0) > 0).length;
 
-```
-html += `<div class="stat-card"><div class="stat-header">
-  <span class="stat-name mono" style="color:${sub.color}">${sub.icon} ${sub.name}</span>
-  <span class="stat-info mono">${active}/7d · ${Math.floor(tot/60)}h${tot%60}m</span>
-</div><div class="heat-row">`;
+    html += `<div class="stat-card"><div class="stat-header">
+      <span class="stat-name mono" style="color:${sub.color}">${sub.icon} ${sub.name}</span>
+      <span class="stat-info mono">${active}/7d · ${Math.floor(tot/60)}h${tot%60}m</span>
+    </div><div class="heat-row">`;
 
-l7.forEach(k => {
-  const m = state.sessions[k]?.[sub.id]?.minutes || 0;
-  const p = Math.min(1, m / sub.target);
-  const op = m > 0 ? 0.3 + p * 0.7 : 0.15;
-  const bg = m > 0 ? sub.color : "#21262D";
-  const c = m > 0 ? "#fff" : "#484F58";
-  const label = m > 0 ? m : WD[(new Date(k).getDay()+6)%7];
-  html += `<div class="heat-cell" style="background:${bg};opacity:${op};color:${c}">${label}</div>`;
-});
+    l7.forEach(k => {
+      const m = state.sessions[k]?.[sub.id]?.minutes || 0;
+      const p = Math.min(1, m / sub.target);
+      const op = m > 0 ? 0.3 + p * 0.7 : 0.15;
+      const bg = m > 0 ? sub.color : "#21262D";
+      const c = m > 0 ? "#fff" : "#484F58";
+      const label = m > 0 ? m : WD[(new Date(k).getDay()+6)%7];
+      html += `<div class="heat-cell" style="background:${bg};opacity:${op};color:${c}">${label}</div>`;
+    });
 
-html += `</div></div>`;
-```
+    html += `</div></div>`;
+  });
 
-});
+  // Totals
+  const all = Object.keys(state.sessions);
+  const perf = all.filter(k => SUBJECTS.every(s => state.sessions[k]?.[s.id]?.done)).length;
+  const totM = all.reduce((a,k) => a + SUBJECTS.reduce((b,s) => b + (state.sessions[k]?.[s.id]?.minutes || 0), 0), 0);
+  const actD = all.filter(k => SUBJECTS.some(s => (state.sessions[k]?.[s.id]?.minutes || 0) > 0)).length;
 
-// Totals
-const all = Object.keys(state.sessions);
-const perf = all.filter(k => SUBJECTS.every(s => state.sessions[k]?.[s.id]?.done)).length;
-const totM = all.reduce((a,k) => a + SUBJECTS.reduce((b,s) => b + (state.sessions[k]?.[s.id]?.minutes || 0), 0), 0);
-const actD = all.filter(k => SUBJECTS.some(s => (state.sessions[k]?.[s.id]?.minutes || 0) > 0)).length;
+  html += `
+    <div class="stat-card" style="margin-top:4px">
+      <div style="font-size:11px;color:#484F58;margin-bottom:8px" class="mono">Gesamt</div>
+      <div class="totals mono">
+        <div><div class="total-num" style="color:#F0F6FC">${actD}</div><div class="total-label">Tage</div></div>
+        <div><div class="total-num" style="color:#3FB950">${perf}</div><div class="total-label">Perfekt</div></div>
+        <div><div class="total-num" style="color:#58A6FF">${Math.round(totM/60)}</div><div class="total-label">Stunden</div></div>
+      </div>
+    </div>
+    <button class="reset-btn mono" onclick="resetAll()">Zurücksetzen</button>
+  `;
 
-html += `<div class="stat-card" style="margin-top:4px"> <div style="font-size:11px;color:#484F58;margin-bottom:8px" class="mono">Gesamt</div> <div class="totals mono"> <div><div class="total-num" style="color:#F0F6FC">${actD}</div><div class="total-label">Tage</div></div> <div><div class="total-num" style="color:#3FB950">${perf}</div><div class="total-label">Perfekt</div></div> <div><div class="total-num" style="color:#58A6FF">${Math.round(totM/60)}</div><div class="total-label">Stunden</div></div> </div> </div> <button class="reset-btn mono" onclick="resetAll()">Zurücksetzen</button>`;
-
-el.innerHTML = html;
+  el.innerHTML = html;
 }
 
 function resetAll() {
-if (confirm(“Alle Daten löschen?”)) {
-state = { sessions: {}, notes: {} };
-saveData();
-render();
-}
+  if (confirm("Alle Daten löschen?")) {
+    state = { sessions: {}, notes: {} };
+    saveData();
+    render();
+  }
 }
 
 // Init
 loadData();
 render();
 </script>
-
 </body>
 </html>
